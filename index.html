@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+
+    <header class="header__logo">
+        <img src="./assets/images-removebg-preview.png">
+    </header>
+    
+    <main class="Encriptador">
+
+        <section class="Encriptador__seccion1">
+
+            <textarea 
+            placeholder="Ingresa el texto aquí" class="cajatexto" 
+            name="texto" 
+            id="texto" 
+            cols="30" 
+            rows="10"
+            ></textarea>
+            <p class="encriptador__seccion1__aviso"> &#9888; Solo letras minúsculas y sin acentos.</p>
+
+            <div class="encriptador__seccion1__botones">
+                <button onclick="Encriptar();" type="button" class="encriptar__boton">Encriptar</button>
+                <button onclick="Desencriptar();" type="button" class="desencriptar__boton">Desencriptar</button>
+            </div>
+
+        </section>
+
+        <section class="encriptador__seccion2">
+
+            <div>
+                <img class="gatito" 
+                src="./assets/gatito.png" alt="gatito">
+            </div>
+
+            <div class="encriptador__seccion2__mensajes">
+                <h2 class="encriptador__seccion2__titulo">Ningún mensaje fue encontrado</h2>
+                <p class="encriptador__seccion2__texto">Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+
+            <div class="encriptador__seccion2__copiar">
+                <input type="button" class="copiar__boton" value="Copiar">
+                <button class="reiniciar__boton">&#x21bb</button>
+            </div>
+
+            <div class="encriptador__seccion2__resultado">
+                <p class = "resultado"></p> 
+            </div>
+
+        </section>        
+    </main>
+    
+    <footer>
+        <section class="footer__contenido">
+            <p class="footer__contenido__texto"> Desarrollado por Lina Sotto 2024</p>
+            <div class="footer__contenido__links">
+                <a href="https://www.linkedin.com/in/lina-daniela-soto/"> <img src="./assets/linkedin.png" alt="icono linkedin">
+                </a>
+                <a href="https://github.com/LinaSotto"> <img src="assets/github.png"> </a>
+            </div>
+        </section>
+    </footer>
+
+</body>
+<script src="app.js"></script>
+</html>
